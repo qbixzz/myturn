@@ -1,0 +1,13 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "enables the default permissions",
+  "windows": [
+    "main",
+    "flyout"
+  ],
+  "permissions": [
+    "core:default",
+    "positioner:default"
+  ]
+}

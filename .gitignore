@@ -1,0 +1,27 @@
+# Rust / Cargo
+target/
+
+# Tauri generated
+src-tauri/gen/
+
+# Node
+node_modules/
+dist/
+
+# AI / agent tooling
+.claude/
+docs/agents/
+PRD.md
+CONTEXT.md
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
