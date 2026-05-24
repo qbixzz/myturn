@@ -36,7 +36,9 @@ Add to `~/.claude/settings.json`:
 }
 ```
 
-The hook script lives in `hook-tests/` — copy `myturn-bridge.js` to `~/.claude/hooks/` and update the path above.
+Copy `hooks/myturn-bridge.js` to `~/.claude/hooks/` and update the path above.
+
+> **WSL users**: the hook auto-detects WSL and writes the bridge file to your Windows home (`C:\Users\<you>\.claude\`) so the Windows Tauri app can find it.
 
 ## Build
 
@@ -56,6 +58,8 @@ On first run, MyTurn writes `%APPDATA%\dev.myturn.app\config.json` with default 
 
 ```
 dist/               frontend flyout (plain HTML/JS, no bundler)
+hooks/
+  myturn-bridge.js  Stop hook — copy to ~/.claude/hooks/
 hook-tests/         Node.js integration tests for the Stop hook
 src-tauri/
   src/
